@@ -136,25 +136,22 @@ public class GUILoginClass {
 
                 FileAndHashing file = new FileAndHashing();
 
-                String username = textField2.getText();
+                String username = textField1.getText();
                 String password = textField2.getText();
                 String hashedpassword ;
                 password = password.trim();
                 username = username.trim();
 
                 hashedpassword=file.hashing(password);
-
                 if (file.FileReader(hashedpassword,username)){
 
-                    //JOptionPane.showMessageDialog(null, " ! user successfully logged in");
+                    JOptionPane.showMessageDialog(null, " ! user successfully logged in");
 
                 }
-
                 else {
-
-                    //JOptionPane.showMessageDialog(null, " ! user not found ");
-
+                    JOptionPane.showMessageDialog(null, " ! user not found ");
                 }
+
 
             }
         });
