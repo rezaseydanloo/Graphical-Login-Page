@@ -307,7 +307,7 @@ public class GUISigninClass {
                 Pattern level1number = Pattern.compile("[0-9]{8,16}");
                 Pattern level2 = Pattern.compile("[a-zA-Z]{8,16}");
                 Pattern level3 = Pattern.compile("[a-zA-Z0-9]{8,16}");
-                Pattern level4 = Pattern.compile("[a-zA-Z0-9@$!%*?&]{8,16}");
+                Pattern level4 = Pattern.compile("[a-zA-Z0-9@#$!%*?&]{8,16}");
 
                 Matcher l1lower = level1lower.matcher(password);
                 Matcher l1upper = level1upper.matcher(password);
